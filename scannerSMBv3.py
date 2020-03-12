@@ -10,14 +10,6 @@ pkt = b'\x00\x00\x00\xc0\xfeSMB@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00
 fichierDip = sys.argv[1]
 
 
-#modification 
-
-#1- récupération de chaque ip d'un poste depuis une liste et ping 
-   # Si ping ok, ajout dans une liste 
-   # Sinon, exclusion
-
-#2 - Scan de chaque ip via une boucle 
-
 listIp = []
 
 
@@ -30,7 +22,7 @@ for ip in files:
         if len(ip) == 0:
             files.remove(ip)
         
-
+# Option PING
 #for ip2 in files:
 #        fifi = os.system("ping -c 2 " + ip2 +"> /dev/null" )
 
